@@ -1,7 +1,8 @@
 # Analysis Scripts for "Humans Use Forward Thinking to Exert Social Control (Na et al., 2020)"
 
+--------------------------------------------------
 I. SYSTEM REQUIREMENTS AND INSTALLATION GUIDE
-
+--------------------------------------------------
 Verify that version 9.5 (R2018b) of the MATLAB Runtime is installed.   
 If not, you can run the MATLAB Runtime installer.
 To find its location, enter
@@ -23,6 +24,7 @@ in the MathWorks Documentation Center.
 
 ------------------------------------------------------
 II. REPRODUCTION INSTRUCTIONS
+------------------------------------------------------
 - The symbol(@) indicates that it is reported or graphically showed in the paper
 
 1)Behavioral results (Fig2)	
