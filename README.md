@@ -1,7 +1,7 @@
 # ug2_analysis_scripts
 Analysis scripts (behavior and fMRI)
 
-**** System requirements and installation guide ****
+I. System requirements and installation guide
 
 Verify that version 9.5 (R2018b) of the MATLAB Runtime is installed.   
 If not, you can run the MATLAB Runtime installer.
@@ -22,9 +22,9 @@ For more information about the MATLAB Runtime and the MATLAB Runtime installer, 
 in the MathWorks Documentation Center.
 
 
-**** Reproduction instructions ****
+II. Reproduction instructions
 
-1) Behavioral results	
+1)Behavioral results	
 
 	1.1. open run.m ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
 	
@@ -51,12 +51,22 @@ in the MathWorks Documentation Center.
 			- The labels for each pair of the columns are in "Mname".
 			- Each row matches with each participant in the same order as in "ID".
 		"M_mean"
+			- Mean of "M" across the participants
 		"M_std"
+			- Standard deviation for "M" across the participants
 		"stat_ICvNC"
+			- 'columns': column labels for 'f_var', 'pt_mean', 't_mean_uneqvar'
+			- 'rows': row labels for 'f_var', 'pt_mean', 't_mean_uneqvar'			
+			- 'f_var': Results of F-test for variance difference between IC and NC
+			- 'pt_mean': Results of t-test for mean difference assuming equal variance between IC and NC
+			- 't_mean_uneqvar': Results of t-test for mean difference assuming unequal variance between IC and NC
 
-2) Modeling results
+2)Modeling results
 
-3) Whole brain results
+	1.1. a
+	
 
-4) ROI results
+3)Whole brain results
+
+4)ROI results
 
