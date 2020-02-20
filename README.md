@@ -1,7 +1,7 @@
 # ug2_analysis_scripts
 Analysis scripts (behavior and fMRI)
 
-*** System requirements and installation guide ***
+**** System requirements and installation guide ****
 
 Verify that version 9.5 (R2018b) of the MATLAB Runtime is installed.   
 If not, you can run the MATLAB Runtime installer.
@@ -22,7 +22,7 @@ For more information about the MATLAB Runtime and the MATLAB Runtime installer, 
 in the MathWorks Documentation Center.
 
 
-*** Reproduction instructions ***
+**** Reproduction instructions ****
 
 1) Behavioral results	
 
