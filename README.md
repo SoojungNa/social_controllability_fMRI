@@ -23,7 +23,7 @@ in the MathWorks Documentation Center.
 
 
 II. REPRODUCTION INSTRUCTIONS
-*The symbol(@) indicates that it is reported or graphically showed in the paper
+- The symbol(@) indicates that it is reported or graphically showed in the paper
 
 1)Behavioral results (Fig2)	
 
