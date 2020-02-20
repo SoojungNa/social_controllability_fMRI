@@ -24,22 +24,19 @@ in the MathWorks Documentation Center.
 
 2. Reproduction instructions
 
-* Both the compiled files and the matlab files are available at https://github.com/SoojungNa/ug2_analysis_scripts
-
 1) Behavioral results
-
 	1.1. open run.m ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
 
 	1.2. update input/output directories (line 17, 23)
-      - Input data("beh02_clean.mat") is at https://github.com/SoojungNa/ug2_analysis_scripts/0.data
+		- Input data("beh02_clean.mat") is at https://github.com/SoojungNa/ug2_analysis_scripts/0.data
 
 	1.3. run run.m
 
 	1.4. "results.mat" will be generated. This file has the variables as below.
 		"ID" - participants' ids
-		"Mname" 
+		"Mname"
 			- Eight strings represents the labels for each pair of the columns of "M"
-			- 'offer': Mean offer throughout 40 trials 
+			- 'offer': Mean offer throughout 40 trials
 			- 'rejR': Mean rejection rate
 			- 'rejR_L': Mean rejection rate for low offers ($1-3)
 			- 'rejR_M': Mean rejection rate for medium offers ($4-6)
@@ -48,10 +45,10 @@ in the MathWorks Documentation Center.
 			- 'emo': Mean self-reported emotion ratings
 			- 'pc': Self-reported perceived control ratings
 		"M"
-      - Odd columns are the "In Control" condition.
-      - Even columns are the "No Control" condition.
-      - The labels for each pair of the columns are in "Mname".
-      - Each row matches with each participant in the same order as in "ID".
+			- Odd columns are the "In Control" condition.
+			- Even columns are the "No Control" condition.
+			- The labels for each pair of the columns are in "Mname".
+			- Each row matches with each participant in the same order as in "ID".
 		"M_mean"
 		"M_std"
 		"stat_ICvNC"
