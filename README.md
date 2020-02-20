@@ -126,7 +126,7 @@ II. REPRODUCTION INSTRUCTIONS
 4.Neural signals for action values (Fig5)
 ------------
 Group-level contrast images are available at https://identifiers.org/neurovault.collection:6621.
-Contact soojung.na@gmail.com for the raw/preprocessed imaging data.
+Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI data.
 
 	4.1. event
 	
