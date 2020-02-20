@@ -27,8 +27,8 @@ II. REPRODUCTION INSTRUCTIONS
 ------------------------------------------------------
 - The symbol(@) indicates that it is reported or graphically showed in the paper
 
-1. Behavioral results (Fig2)	
-----------
+1.Behavioral results (Fig2)	
+-----------------------------
 
 	1.1. open "run.m" ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
 	
