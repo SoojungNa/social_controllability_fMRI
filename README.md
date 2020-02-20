@@ -1,4 +1,4 @@
-# Analysis Scripts for "Humans Use Forward Thinking to Exert Social Control"
+# Analysis Scripts for "Humans Use Forward Thinking to Exert Social Control (Na et al., 2020)"
 
 I. SYSTEM REQUIREMENTS AND INSTALLATION GUIDE
 
@@ -63,7 +63,7 @@ II. REPRODUCTION INSTRUCTIONS
 
 2)Modeling results
 
-	1.1. a
+	2.1. open 
 	
 
 3)Whole brain results
