@@ -1,7 +1,7 @@
 # ug2_analysis_scripts
 Analysis scripts (behavior and fMRI)
 
-1. System requirements and installation guide
+*** System requirements and installation guide ***
 
 Verify that version 9.5 (R2018b) of the MATLAB Runtime is installed.   
 If not, you can run the MATLAB Runtime installer.
@@ -22,12 +22,13 @@ For more information about the MATLAB Runtime and the MATLAB Runtime installer, 
 in the MathWorks Documentation Center.
 
 
-2. Reproduction instructions
+*** Reproduction instructions ***
 
 1) Behavioral results	
 
-1.1. open run.m ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
-1.2. update input/output directories (line 17, 23)
+	1.1. open run.m ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
+	
+	1.2. update input/output directories (line 17, 23)
 		- Input data("beh02_clean.mat") is at https://github.com/SoojungNa/ug2_analysis_scripts/0.data
 
 	1.3. run run.m
