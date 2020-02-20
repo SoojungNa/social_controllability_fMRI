@@ -125,9 +125,22 @@ II. REPRODUCTION INSTRUCTIONS
 
 4.Neural signals for action values (Fig5)
 ------------
-	4.1. 
+	4.1. event
+	
+	4.2. pmod
+	
+	4.3. indiv
+	
+	4.4. group
+	
+	4.5. roi
 
 
 5.Neural signals for norm prediction errors (Fig6)
 ------------
-
+	same procedure as 4. use these files instead:
+	5.1. "event_v1.m" (same as 4)
+	5.2. "pmod_v6.m"
+	5.3. "run_UG2_indiv_v6_normPE.m"
+	5.4. "group_v6_normPE_IC_t1.m" ("~ NC_t1.m" for No Control)
+	5.5. 
