@@ -67,7 +67,8 @@ II. REPRODUCTION INSTRUCTIONS
 			- 't_mean_uneqvar': Results of t-test for mean difference assuming unequal variance
 			
 	
-2)Model fitting (Fig3.b-c, delta in Fig4) 
+2.Model fitting (Fig3.b-c, delta in Fig4)
+-----------------
 
 	2.1. open nRv_6models_cap2_t20_30trials_IC.m
 		This script is used for In Control. See 2.5 for No Control.
@@ -98,10 +99,13 @@ II. REPRODUCTION INSTRUCTIONS
 		
 	2.5. Use the same codes for No Control after replacing "IC" with "NC" at line 15:18, and 27.
 	
-3)Parameter recovery (SI) and accuracy (Fig3.d-e)
+3.Parameter recovery (SI) and accuracy (Fig3.d-e)
+------------
 
 
-3)Neural signals for action values (Fig5)
+4.Neural signals for action values (Fig5)
+------------
 
-4)Neural signals for norm prediction errors (Fig6)
+5.Neural signals for norm prediction errors (Fig6)
+------------
 
