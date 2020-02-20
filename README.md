@@ -70,7 +70,8 @@ II. REPRODUCTION INSTRUCTIONS
 2.Model fitting (Fig3.b-c, delta in Fig4)
 -----------------
 
-	2.1. open nRv_6models_cap2_t20_30trials_IC.m (for In Control; use "~ NC.m" for No Control)		
+	2.1. open "nRv_6models_cap2_t20_30trials_IC.m" (for In Control; use "~ NC.m" for No Control)
+		(These files are at https://github.com/SoojungNa/ug2_analysis_scripts/2.model)
 	
 	2.2. update input/output/function directories (line 5, 22, 26)
 		- Input data("beh02_clean.mat") is at https://github.com/SoojungNa/ug2_analysis_scripts/0.data
@@ -99,9 +100,10 @@ II. REPRODUCTION INSTRUCTIONS
 	
 3.Parameter recovery and accuracy (Fig3.d-e)
 ------------
-	3.1. run 'recover_nRv_f3_cap2_t20_etaf_IC.m' after updating line 6 and 8. ('~ NC.m' for No Control)		
+	3.1. run "recover_nRv_f3_cap2_t20_etaf_IC.m" after updating line 6 and 8. ("~ NC.m" for No Control)
+		(These files are at https://github.com/SoojungNa/ug2_analysis_scripts/2.model)
 	
-	3.2. 'recover_nRv_f3_cap2_t20_etaf_IC.mat' will be generated. Open the file and then you will see:
+	3.2. "recover_nRv_f3_cap2_t20_etaf_IC.mat" will be generated. Open the file and then you will see:
 		"param_tru"
 			- parameter estimated from the real data
 			- this parameter estimates were used to generate a new set of simulated choice data
@@ -110,13 +112,21 @@ II. REPRODUCTION INSTRUCTIONS
 		"param_est"
 			- parameter estimates for the simulated data
 		"R" and "P"
-			- correlation coefficients and p-values between param_tru and param_est
+			- correlation coefficients and p-values between "param_tru" and "param_est"
 			
-	3.3. 
-
+	3.3. run "accuracy.m" after updating line 2.
+	
+	3.4. It will generate "accuracy.mat" file. in this file:
+		"ic" represents In Control
+		"nc" represents No Control
+		"accuracyRate" (@)
+			- you can find it under ic or nc
+			- it is the matching rates b/w actual data("RESP") and simulated data("Rsim")
 
 4.Neural signals for action values (Fig5)
 ------------
+	4.1. 
+
 
 5.Neural signals for norm prediction errors (Fig6)
 ------------
