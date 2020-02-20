@@ -70,15 +70,14 @@ II. REPRODUCTION INSTRUCTIONS
 2.Model fitting (Fig3.b-c, delta in Fig4)
 -----------------
 
-	2.1. open nRv_6models_cap2_t20_30trials_IC.m
-		This script is used for In Control. See 2.5 for No Control.
+	2.1. open nRv_6models_cap2_t20_30trials_IC.m (for In Control; use "~ NC.m" for No Control)		
 	
 	2.2. update input/output/function directories (line 5, 22, 26)
 		- Input data("beh02_clean.mat") is at https://github.com/SoojungNa/ug2_analysis_scripts/0.data
 	
 	2.3. run it.
 	
-	2.4. "nRv_6models_cap2_t20_30trials_IC.mat" will be generated. Open the file and then you will see:
+	2.4. "nRv_6models_cap2_t20_30trials_IC.mat" will be generated. Open the file and you will see:
 		
 		"Model"
 			- The model list
@@ -97,11 +96,23 @@ II. REPRODUCTION INSTRUCTIONS
 			- columns correspond to freeName(parameters)
 			- the 3rd dimension correspond to Model
 		
-	2.5. To run it on "No Control",  replace "IC" with "NC" at line 15:18, and 27.
 	
-3.Parameter recovery (SI) and accuracy (Fig3.d-e)
+3.Parameter recovery and accuracy (Fig3.d-e)
 ------------
-	3.1. 
+	3.1. run 'recover_nRv_f3_cap2_t20_etaf_IC.m' after updating line 6 and 8. ('~ NC.m' for No Control)		
+	
+	3.2. 'recover_nRv_f3_cap2_t20_etaf_IC.mat' will be generated. Open the file and then you will see:
+		"param_tru"
+			- parameter estimated from the real data
+			- this parameter estimates were used to generate a new set of simulated choice data
+		"Rsim"
+			- Simulated choice data generated assuming "param_tru"
+		"param_est"
+			- parameter estimates for the simulated data
+		"R" and "P"
+			- correlation coefficients and p-values between param_tru and param_est
+			
+	3.3. 
 
 
 4.Neural signals for action values (Fig5)
