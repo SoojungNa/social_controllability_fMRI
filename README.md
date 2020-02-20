@@ -22,16 +22,17 @@ in the MathWorks Documentation Center.
 
 
 
-II. REPRODUCTION INSTRUCTIONS
+II. REPRODUCTION INSTRUCTIONS 
+(the symbol(@) indicates that it is reported or graphically showed in the paper)
 
-1)Behavioral results	
+1)Behavioral results (Fig2)	
 
-	1.1. open run.m ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
+	1.1. open "run.m" ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
 	
 	1.2. update input/output directories (line 17, 23)
 		- Input data("beh02_clean.mat") is at https://github.com/SoojungNa/ug2_analysis_scripts/0.data
 
-	1.3. run run.m
+	1.3. run it.
 
 	1.4. "results.mat" will be generated. This file has the variables as below.
 		"ID" - participants' ids
@@ -45,28 +46,58 @@ II. REPRODUCTION INSTRUCTIONS
 			- 'reward': Mean reward
 			- 'emo': Mean self-reported emotion ratings
 			- 'pc': Self-reported perceived control ratings
-		"M"
+		"M" (@)
 			- Odd columns are the "In Control" condition.
 			- Even columns are the "No Control" condition.
 			- The labels for each pair of the columns are in "Mname".
 			- Each row matches with each participant in the same order as in "ID".
-		"M_mean"
+		"M_mean" (@)
 			- Mean of "M" across the participants
-		"M_std"
-			- Standard deviation for "M" across the participants
-		"stat_ICvNC"
+		"M_std" (@)
+			- Standard deviation for "M" across the participants 
+		"stat_ICvNC" (@)
 			- 'columns': column labels for 'f_var', 'pt_mean', 't_mean_uneqvar'
 			- 'rows': row labels for 'f_var', 'pt_mean', 't_mean_uneqvar'			
 			- 'f_var': Results of F-test for variance difference between IC and NC
-			- 'pt_mean': Results of t-test for mean difference assuming equal variance between IC and NC
-			- 't_mean_uneqvar': Results of t-test for mean difference assuming unequal variance between IC and NC
-
-2)Modeling results
-
-	2.1. open 
+			- 'pt_mean': Results of t-test for mean difference assuming equal variance b/w IC and NC
+			- 't_mean_uneqvar': Results of t-test for mean difference assuming unequal variance b/w IC and NC
+			
 	
+2)Model fitting (Fig3.b-c, delta in Fig4) 
 
-3)Whole brain results
+	2.1. open nRv_6models_cap2_t20_30trials_IC.m
+		This script is used for In Control. See 2.5 for No Control.
+	
+	2.2. update input/output directories (line 5, 22, 26)
+		- Input data("beh02_clean.mat") is at https://github.com/SoojungNa/ug2_analysis_scripts/0.data
+	
+	2.3. run it.
+	
+	2.4. "nRv_6models_cap2_t20_30trials_IC.mat" will be generated. Open the file and then you will see:
+		
+		"Model"
+			- The model list
+			- MF=model-free; f0=0step; fD=1step; f3=2step; f4=3step; f5=4step
+		"BIC" (@)
+			- BIC scores for each model (columns; corresponds to "Model") and each particiant (rows)		
+		"freeName"
+			- parameter names
+		"freeID"
+			- rows correspond to "Model"
+			- columns correspond to "freeName"
+			- 1=set free; 0=not used or fixed.		
+		"param" (@)
+			- parameter estimates
+			- rows correspond to participants
+			- columns correspond to freeName(parameters)
+			- The 3rd dimension correspond to Model
+		
+	2.5. Use the same codes for No Control after replacing "IC" with "NC" at line 15:18, and 27.
+	
+3)Parameter recovery (SI) and accuracy (Fig3.d-e)
 
-4)ROI results
+
+3)Neural signals for action values (Fig5)
+
+4)Neural signals for norm prediction errors (Fig6)
 
