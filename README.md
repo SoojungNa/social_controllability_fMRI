@@ -1,7 +1,4 @@
-# ANALYSIS SCRIPTS 
-Paper Title: Humans Use Forward Thinking to Exert Social Control
-
-
+# Analysis Scripts for "Humans Use Forward Thinking to Exert Social Control"
 
 I. SYSTEM REQUIREMENTS AND INSTALLATION GUIDE
 
