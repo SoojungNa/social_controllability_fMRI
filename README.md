@@ -1,7 +1,7 @@
-# ug2_analysis_scripts
-Analysis scripts (behavior and fMRI)
+# ANALYSIS SCRIPTS 
+Paper Title: Humans Use Forward Thinking to Exert Social Control
 
-I. System requirements and installation guide
+I. SYSTEM REQUIREMENTS AND INSTALLATION GUIDE
 
 Verify that version 9.5 (R2018b) of the MATLAB Runtime is installed.   
 If not, you can run the MATLAB Runtime installer.
@@ -22,7 +22,7 @@ For more information about the MATLAB Runtime and the MATLAB Runtime installer, 
 in the MathWorks Documentation Center.
 
 
-II. Reproduction instructions
+II. REPRODUCTION INSTRUCTIONS
 
 1)Behavioral results	
 
