@@ -22,8 +22,8 @@ in the MathWorks Documentation Center.
 
 
 
-II. REPRODUCTION INSTRUCTIONS 
-(the symbol(@) indicates that it is reported or graphically showed in the paper)
+II. REPRODUCTION INSTRUCTIONS
+*The symbol(@) indicates that it is reported or graphically showed in the paper
 
 1)Behavioral results (Fig2)	
 
@@ -56,11 +56,12 @@ II. REPRODUCTION INSTRUCTIONS
 		"M_std" (@)
 			- Standard deviation for "M" across the participants 
 		"stat_ICvNC" (@)
+			- statistical testing results to compare b/w IC and NC
 			- 'columns': column labels for 'f_var', 'pt_mean', 't_mean_uneqvar'
 			- 'rows': row labels for 'f_var', 'pt_mean', 't_mean_uneqvar'			
-			- 'f_var': Results of F-test for variance difference between IC and NC
-			- 'pt_mean': Results of t-test for mean difference assuming equal variance b/w IC and NC
-			- 't_mean_uneqvar': Results of t-test for mean difference assuming unequal variance b/w IC and NC
+			- 'f_var': Results of F-test for variance difference
+			- 'pt_mean': Results of t-test for mean difference assuming equal variance
+			- 't_mean_uneqvar': Results of t-test for mean difference assuming unequal variance
 			
 	
 2)Model fitting (Fig3.b-c, delta in Fig4) 
@@ -90,7 +91,7 @@ II. REPRODUCTION INSTRUCTIONS
 			- parameter estimates
 			- rows correspond to participants
 			- columns correspond to freeName(parameters)
-			- The 3rd dimension correspond to Model
+			- the 3rd dimension correspond to Model
 		
 	2.5. Use the same codes for No Control after replacing "IC" with "NC" at line 15:18, and 27.
 	
