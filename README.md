@@ -28,8 +28,10 @@ Also, download and install SPM12 at https://www.fil.ion.ucl.ac.uk/spm/software/d
 II. REPRODUCTION INSTRUCTIONS
 ------------------------------------------------------
 - The symbol(@) indicates that it is reported or graphically showed in the paper
-- Individual GLM on fMRI data and the modeling fitting scripts are expected to take less than 2 days to run.
-- Other scripts will take a couple seconds, minutes, or hours.
+- Both the matlab files and the compiled files are available here.
+- Expected run time: The longest (Individual GLM on fMRI data & model fitting scripts) are expected to take
+	less than 2 days to run. Other scripts will take a couple seconds, minutes, or hours.
+
 
 1.Behavioral results (Fig2)	
 -----------------------------
