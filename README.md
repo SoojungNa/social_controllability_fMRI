@@ -128,22 +128,27 @@ II. REPRODUCTION INSTRUCTIONS
 Group-level contrast images are available at https://identifiers.org/neurovault.collection:6621.
 Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
 
-	4.1. event
+	4.1. event: run "event_v1.m" after updating the directories (line 3, 14, 17, 20)
+		This will generate the individual event regressors for individual GLM.
 	
-	4.2. pmod
+	4.2. pmod: run "pmod_v1.m" after updating the directories (line 5, 18, 21, 24, 25, 29)
+		This will generate the individual parametric modulators (values of chosen action) for individual GLM.
 	
-	4.3. indiv
+	4.3. indiv: run "run_UG2_indiv_v1_xV.m" after updating the directories (Line 3, 4, 5, 6)
+		This will generate the individual GLM results on the whole brain.
 	
-	4.4. group
+	4.4. group: run "group_xV_IC_t1.m" for In Control and group_xV_NC_t1.m for No Control
+		This will generate the one-sample t-test results for the chosen action value coefficients at the group level.
 	
-	4.5. roi
+	4.5. roi: run "xV_both_roi_contrast_peak.m" after updating the directories (line 3, 4, 6, 7, 14, 46)
+		This will generate the coefficients at each roi.
 
 
 5.Neural signals for norm prediction errors (Fig6)
 ------------
-	same procedure as 4. use these files instead:
+	Same procedure as 4. Use these files instead:
 	5.1. "event_v1.m" (same as 4)
 	5.2. "pmod_v6.m"
 	5.3. "run_UG2_indiv_v6_normPE.m"
 	5.4. "group_v6_normPE_IC_t1.m" ("~ NC_t1.m" for No Control)
-	5.5. 
+	5.5. "normPE_both_roi_contrast_peak.m"
