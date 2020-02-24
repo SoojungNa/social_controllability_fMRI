@@ -21,11 +21,15 @@ For more information about the MATLAB Runtime and the MATLAB Runtime installer, 
 "Distribute Applications" in the MATLAB Compiler documentation  
 in the MathWorks Documentation Center.
 
+Also, download and install SPM12 at https://www.fil.ion.ucl.ac.uk/spm/software/download/
+
 
 
 II. REPRODUCTION INSTRUCTIONS
 ------------------------------------------------------
 - The symbol(@) indicates that it is reported or graphically showed in the paper
+- Individual GLM on fMRI data and the modeling fitting scripts are expected to take less than 2 days to run.
+- Other scripts will take a couple seconds, minutes, or hours.
 
 1.Behavioral results (Fig2)	
 -----------------------------
@@ -137,11 +141,11 @@ Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
 	4.3. indiv: run "run_UG2_indiv_v1_xV.m" after updating the directories (Line 3, 4, 5, 6)
 		This will generate the individual GLM results on the whole brain.
 	
-	4.4. group: run "group_xV_IC_t1.m" for In Control and group_xV_NC_t1.m for No Control
-		This will generate the one-sample t-test results for the chosen action value coefficients at the group level.
+	4.4. group: run "group_xV_IC_t1.m" for In Control and group_xV_NC_t1.m for No Control.
+		This will generate the one-sample t-test results for the chosen action value coefficients at the group level.(@)
 	
-	4.5. roi: run "xV_both_roi_contrast_peak.m" after updating the directories (line 3, 4, 6, 7, 14, 46)
-		This will generate the coefficients at each roi.
+	4.5. roi: run "xV_both_roi_contrast_peak.m" after updating the directories (line 3, 4, 6, 7, 14, 46) 
+		This will generate the coefficients at each roi. (@)
 
 
 5.Neural signals for norm prediction errors (Fig6)
@@ -150,5 +154,5 @@ Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
 	5.1. "event_v1.m" (same as 4)
 	5.2. "pmod_v6.m"
 	5.3. "run_UG2_indiv_v6_normPE.m"
-	5.4. "group_v6_normPE_IC_t1.m" ("~ NC_t1.m" for No Control)
-	5.5. "normPE_both_roi_contrast_peak.m"
+	5.4. "group_v6_normPE_IC_t1.m" ("~ NC_t1.m" for No Control) (@)
+	5.5. "normPE_both_roi_contrast_peak.m" (@)
