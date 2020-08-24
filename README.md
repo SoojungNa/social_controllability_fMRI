@@ -33,7 +33,7 @@ II. REPRODUCTION INSTRUCTIONS
 	less than 2 days to run. Other scripts will take a couple seconds, minutes, or hours.
 
 
-1.Behavioral results (Fig2)	
+1.Behavioral results (Fig.2; Fig.S2)	
 -----------------------------
 
 	1.1. open "run.m" ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
@@ -56,8 +56,8 @@ II. REPRODUCTION INSTRUCTIONS
 			- 'emo': Mean self-reported emotion ratings
 			- 'pc': Self-reported perceived control ratings
 		"M" (@)
-			- Odd columns are the "In Control" condition.
-			- Even columns are the "No Control" condition.
+			- Odd columns are the "Controllable" condition.
+			- Even columns are the "Uncontrollable" condition.
 			- The labels for each pair of the columns are in "Mname".
 			- Each row matches with each participant in the same order as in "ID".
 		"M_mean" (@)
@@ -65,7 +65,7 @@ II. REPRODUCTION INSTRUCTIONS
 		"M_std" (@)
 			- Standard deviation for "M" across the participants 
 		"stat_ICvNC" (@)
-			- statistical testing results to compare b/w IC and NC
+			- statistical testing results to compare b/w C (Controllable) and U (Uncontrollable)
 			- 'columns': column labels for 'f_var', 'pt_mean', 't_mean_uneqvar'
 			- 'rows': row labels for 'f_var', 'pt_mean', 't_mean_uneqvar'			
 			- 'f_var': Results of F-test for variance difference
@@ -73,10 +73,10 @@ II. REPRODUCTION INSTRUCTIONS
 			- 't_mean_uneqvar': Results of t-test for mean difference assuming unequal variance
 			
 	
-2.Model fitting (Fig3.b-c, delta in Fig4)
+2.Model fitting (Fig.3b,d,e)
 -----------------
 
-	2.1. open "nRv_6models_cap2_t20_30trials_IC.m" (for In Control; use "~ NC.m" for No Control)
+	2.1. open "nRv_6models_cap2_t20_30trials_IC.m" (for Controllable; use "~ NC.m" for Uncontrollable)
 		(These files are at https://github.com/SoojungNa/ug2_analysis_scripts/2.model)
 	
 	2.2. update input/output/function directories (line 5, 22, 26)
@@ -104,9 +104,9 @@ II. REPRODUCTION INSTRUCTIONS
 			- the 3rd dimension correspond to Model
 		
 	
-3.Parameter recovery and accuracy (Fig3.d-e)
+3.Parameter recovery and accuracy (Fig.3c, Fig.S3)
 ------------
-	3.1. run "recover_nRv_f3_cap2_t20_etaf_IC.m" after updating line 6 and 8. ("~ NC.m" for No Control)
+	3.1. run "recover_nRv_f3_cap2_t20_etaf_IC.m" after updating line 6 and 8. ("~ NC.m" for Uncontrollable)
 		(These files are at https://github.com/SoojungNa/ug2_analysis_scripts/2.model)
 	
 	3.2. "recover_nRv_f3_cap2_t20_etaf_IC.mat" will be generated. Open the file and then you will see:
@@ -123,13 +123,19 @@ II. REPRODUCTION INSTRUCTIONS
 	3.3. run "accuracy.m" after updating line 2.
 	
 	3.4. It will generate "accuracy.mat" file. in this file:
-		"ic" represents In Control
-		"nc" represents No Control
+		"ic" represents Controllable
+		"nc" represents Uncontrollable
 		"accuracyRate" (@)
 			- you can find it under ic or nc
 			- it is the matching rates b/w actual data("RESP") and simulated data("Rsim")
 
-4.Neural signals for action values (Fig5)
+4.Replication with an online sample (Fig.4)
+------------
+
+
+
+
+4.Neural signals for action values (Fig.5; Table.S1-4)
 ------------
 Group-level contrast images are available at https://identifiers.org/neurovault.collection:6621.
 Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
@@ -143,18 +149,23 @@ Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
 	4.3. indiv: run "run_UG2_indiv_v1_xV.m" after updating the directories (Line 3, 4, 5, 6)
 		This will generate the individual GLM results on the whole brain.
 	
-	4.4. group: run "group_xV_IC_t1.m" for In Control and group_xV_NC_t1.m for No Control.
+	4.4. group: run "group_xV_IC_t1.m" for Controllable and group_xV_NC_t1.m for Uncontrollable.
 		This will generate the one-sample t-test results for the chosen action value coefficients at the group level.(@)
 	
 	4.5. roi: run "xV_both_roi_contrast_peak.m" after updating the directories (line 3, 4, 6, 7, 14, 46) 
 		This will generate the coefficients at each roi. (@)
 
 
-5.Neural signals for norm prediction errors (Fig6)
+5.Neural signals for norm prediction errors (Fig.6; Table.S5-8)
 ------------
 	Same procedure as 4. Use these files instead:
 	5.1. "event_v1.m" (same as 4)
 	5.2. "pmod_v6.m"
 	5.3. "run_UG2_indiv_v6_normPE.m"
-	5.4. "group_v6_normPE_IC_t1.m" ("~ NC_t1.m" for No Control) (@)
+	5.4. "group_v6_normPE_IC_t1.m" ("~ NC_t1.m" for Uncontrollable) (@)
 	5.5. "normPE_both_roi_contrast_peak.m" (@)
+
+
+6.Non-social task (Fig.S1)
+------------
+
