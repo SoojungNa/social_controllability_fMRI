@@ -1,5 +1,5 @@
 # Analysis Scripts for "Humans Use Forward Thinking to Exploit Social Controllability"
-
+Soojung Na, Dongil Chung, Andreas Hula, Ofer Perl, Jennifer Jung, Matthew Heflin, Sylvia Blackmore, Vincenzo G. Fiore, Peter Dayan, and Xiaosi Gu.
 
 I. SYSTEM REQUIREMENTS AND INSTALLATION GUIDE
 --------------------------------------------------
