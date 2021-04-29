@@ -104,7 +104,7 @@ II. REPRODUCTION INSTRUCTIONS
 			- the 3rd dimension correspond to Model
 		
 	
-3.Parameter recovery and accuracy (Fig.3c, Fig.S3)
+3.Parameter recovery and accuracy (Figure 3)
 ------------
 	3.1. run "recover_nRv_f3_cap2_t20_etaf_IC.m" after updating line 6 and 8. ("~ NC.m" for Uncontrollable)
 		(These files are at https://github.com/SoojungNa/ug2_analysis_scripts/2.model)
@@ -128,9 +128,16 @@ II. REPRODUCTION INSTRUCTIONS
 		"accuracyRate" (@)
 			- you can find it under ic or nc
 			- it is the matching rates b/w actual data("RESP") and simulated data("Rsim")
+	
+	3.5. Model recovery: run "run_ic.m" and "run_nc.m" to simulate and estimate the models. Run "results_all.m" for the confusion matrix.
 
 
-4.Neural signals for action values (Figure 5)
+**4. Replication with an online sample (Figure 4)**
+---------
+See the online sample data (0.data/beh_noFlat_1342.mat). Run the same scripts for the behavioral analysis and modeling.
+
+
+5.Neural signals for action values (Figure 5)
 ------------
 Group-level contrast images are available at https://identifiers.org/neurovault.collection:6621.
 Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
@@ -150,11 +157,6 @@ Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
 	4.5. roi: run "makeROI_Feng" to creat a vmPFC ROI mask, run "f2_v26.m" and "f0_v28.m" to extract the ROI coefficients. 
 		Then run "f2_f0_nxV_2blocks_sem.m" This will generate the roi plot. (@)
 		Update the directories in each script before run.
-
-
-**5. Replication with an online sample (Figure 4)**
----------
-See the online sample data (0.data/beh_noFlat_1342.mat). Run the same scripts for the behavioral analysis and modeling.
 
 
 
