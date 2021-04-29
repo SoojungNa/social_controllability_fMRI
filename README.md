@@ -154,7 +154,7 @@ Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
 
 **5. Replication with an online sample (Figure 4)**
 ---------
-See the online sample data. Run the same scripts for the behavioral analysis and modeling.
+See the online sample data (0.data/beh_noFlat_1342.mat). Run the same scripts for the behavioral analysis and modeling.
 
 
 
