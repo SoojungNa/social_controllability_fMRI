@@ -1,4 +1,4 @@
-# Analysis Scripts for "Humans Use Forward Thinking to Exert Social Control (Na et al., 2020)"
+# Analysis Scripts for "Humans Use Forward Thinking to Exploit Social Controllability"
 
 
 I. SYSTEM REQUIREMENTS AND INSTALLATION GUIDE
@@ -31,9 +31,9 @@ II. REPRODUCTION INSTRUCTIONS
 - Both the matlab files and the compiled files are available here.
 - Expected run time: The longest (Individual GLM on fMRI data & model fitting scripts) are expected to take
 	less than 2 days to run. Other scripts will take a couple seconds, minutes, or hours.
+- Group-level tmaps for the fMRI images are available here.
 
-
-1.Behavioral results (Fig.2; Fig.S2)	
+1.Behavioral results (Figure 2)	
 -----------------------------
 
 	1.1. open "run.m" ("run.m" is at https://github.com/SoojungNa/ug2_analysis_scripts/1.beh)
@@ -73,7 +73,7 @@ II. REPRODUCTION INSTRUCTIONS
 			- 't_mean_uneqvar': Results of t-test for mean difference assuming unequal variance
 			
 	
-2.Model fitting (Fig.3b,d,e)
+2.Model fitting (Figure 3)
 -----------------
 
 	2.1. open "nRv_6models_cap2_t20_30trials_IC.m" (for Controllable; use "~ NC.m" for Uncontrollable)
@@ -129,13 +129,8 @@ II. REPRODUCTION INSTRUCTIONS
 			- you can find it under ic or nc
 			- it is the matching rates b/w actual data("RESP") and simulated data("Rsim")
 
-4.Replication with an online sample (Fig.4)
-------------
 
-
-
-
-4.Neural signals for action values (Fig.5; Table.S1-4)
+4.Neural signals for action values (Figure 5)
 ------------
 Group-level contrast images are available at https://identifiers.org/neurovault.collection:6621.
 Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
@@ -143,29 +138,23 @@ Contact soojung.na@gmail.com for the raw/preprocessed individual fMRI images.
 	4.1. event: run "event_v1.m" after updating the directories (line 3, 14, 17, 20)
 		This will generate the individual event regressors for individual GLM.
 	
-	4.2. pmod: run "pmod_v1.m" after updating the directories (line 5, 18, 21, 24, 25, 29)
+	4.2. pmod: run "pmod_v26_f2_nxV.m"  for 2-step and "pmod_v28_f0_normalized.m" for the 0-step model.
 		This will generate the individual parametric modulators (values of chosen action) for individual GLM.
 	
-	4.3. indiv: run "run_UG2_indiv_v1_xV.m" after updating the directories (Line 3, 4, 5, 6)
+	4.3. indiv: run "run_UG2_indiv_v26_f2_nxV_2blocks.m" (2-step model) or "run_UG2_indiv_v28_f0_nxV_2blocks" (0-step model) after updating the directories.
 		This will generate the individual GLM results on the whole brain.
 	
-	4.4. group: run "group_xV_IC_t1.m" for Controllable and group_xV_NC_t1.m for Uncontrollable.
+	4.4. group: run "group_v26_f2_nxV_2blocks_both_t1.m" (2-step model) or "group_v28_f0_nxV_2blocks_both_t1.m"
 		This will generate the one-sample t-test results for the chosen action value coefficients at the group level.(@)
 	
-	4.5. roi: run "xV_both_roi_contrast_peak.m" after updating the directories (line 3, 4, 6, 7, 14, 46) 
-		This will generate the coefficients at each roi. (@)
+	4.5. roi: run "makeROI_Feng" to creat a vmPFC ROI mask, run "f2_v26.m" and "f0_v28.m" to extract the ROI coefficients. 
+		Then run "f2_f0_nxV_2blocks_sem.m" This will generate the roi plot. (@)
+		Update the directories in each script before run.
 
 
-5.Neural signals for norm prediction errors (Fig.6; Table.S5-8)
-------------
-	Same procedure as 4. Use these files instead:
-	5.1. "event_v1.m" (same as 4)
-	5.2. "pmod_v6.m"
-	5.3. "run_UG2_indiv_v6_normPE.m"
-	5.4. "group_v6_normPE_IC_t1.m" ("~ NC_t1.m" for Uncontrollable) (@)
-	5.5. "normPE_both_roi_contrast_peak.m" (@)
+**5. Replication with an online sample (Figure 4)**
+---------
+See the online sample data. Run the same scripts for the behavioral analysis and modeling.
 
 
-6.Non-social task (Fig.S1)
-------------
 
