@@ -1,0 +1,52 @@
+
+load('sample3_online_participants\results_noFlat.mat');
+
+
+%% Plot inputs 
+nP = length(ID);
+x = [1 2 3];
+
+yic = M(:, [5 7 9]) * 100;
+ync = M(:, [6 8 10]) * 100;
+
+eic = nanstd(yic)/sqrt(nP);
+enc = nanstd(ync)/sqrt(nP);
+
+% 5.1. IC errorbar
+s_x1 = x;
+s_y1 = nanmean(yic);
+s_z1 = eic;
+
+% 5.2. NC errorbar
+s_x2 = x;
+s_y2 = nanmean(ync);
+s_z2 = enc;
+
+% 5.3. other settings
+s_xTL = {'1-3','4-6', '7-9'};
+s_xticks = x;
+s_xL = 'Offer size ($)';
+s_yL = 'Mean rejection rate (%)';
+
+s_xlim = [0.5 3.5];
+s_ylim = [0 100];
+
+s_legend = {'C', 'U'};
+
+
+%% Draw
+
+s_1 = errorbar(s_x1, s_y1, s_z1, 'Color', blue_dark, 'MarkerFaceColor', blue_dark);
+hold on
+s_2 = errorbar(s_x2, s_y2, s_z2, 'Color', grey_dark, 'MarkerFaceColor', grey_dark);
+hold on
+
+set([s_1, s_2], 'Marker', 's', 'MarkerEdgeColor', 'none', 'MarkerSize', 5, 'CapSize', 5)
+
+xlabel(s_xL);
+ylabel(s_yL);
+ytickformat('%3.0f');
+legend([s_1 s_2], s_legend, 'Location', 'Southwest', 'box', 'off');
+set(gca, 'box', 'off', 'fontname', 'Arial', 'fontsize', 8, ...
+    'xlim', s_xlim, 'ylim', s_ylim, ...        
+    'TickLength', [0 0], 'xtick', s_xticks, 'xticklabel', s_xTL);
